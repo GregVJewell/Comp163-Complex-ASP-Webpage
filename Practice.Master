@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Practice.Master.cs" Inherits="Project2.Site1" %>
+
+<%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <head>
+            <title>Rolling Thunder</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <style>
+
+
+                body {
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+
+                .topnav a {
+                    float: left;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+            </style>
+        </head>
+    </asp:ContentPlaceHolder>
+
+    <body style="background-image: url('Properties/Background.jpg');">
+        <form id="form2" runat="server">
+            <div>
+                <asp:ContentPlaceHolder id="main_content" runat="server">
+                    <div class="topnav">
+                        <a class="active" href="Home.aspx">Home</a> <a href="Components.aspx">Components</a> <a href="Queries.aspx">RT Queries</a>
+                    </div>
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <p>
+            &nbsp;</p>
+        <div>
+        </div>
+    </body>
+
+</html>
